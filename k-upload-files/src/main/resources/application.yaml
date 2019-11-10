@@ -1,0 +1,15 @@
+server:
+  port : 8082
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        cleanup-queue:
+          destination: cleanup
+          contentType: application/json
+        upload-queue:
+          destination: upload
+          contentType: application/json

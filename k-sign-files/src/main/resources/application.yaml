@@ -1,0 +1,15 @@
+server:
+  port : 8081
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        signature-queue:
+          destination: signature
+          contentType: application/json
+        encryption-queue:
+          destination: encryption
+          contentType: application/json

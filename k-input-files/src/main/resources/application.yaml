@@ -1,0 +1,23 @@
+server:
+  port : 8080
+spring:
+  cloud:
+    stream:
+      kafka:
+        binder:
+          brokers: localhost:9092
+      bindings:
+        signature-queue:
+          destination: signature
+          contentType: application/json
+local:
+  file:
+    input:
+      directoryList: D:\\Projects\\DEM2.0\\FILEINPUT\\LOC-1,D:\\Projects\\DEM2.0\\FILEINPUT\\LOC-2
+      fileExtensions: xml,txt
+      processedFolderName: PROCESSED
+      duplicateFolderName: DUPLICATE
+      tempFolderName: TEMP
+      scanFixedDelay: 10000
+      direction: OUTWARD
+
