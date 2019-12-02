@@ -1,5 +1,10 @@
 server:
   port : 8081
+certificate:
+  path: C:\\OpenSSL\\bin
+  pass: secure
+keystore-type: PKCS12 
+keystore-password: secure 
 eureka:
    client:
       serviceUrl:
