@@ -63,7 +63,7 @@
         <dependency>
 		    <groupId>commons-io</groupId>
 		    <artifactId>commons-io</artifactId>
-		    <version>2.6</version>
+		    <version>2.7</version>
 		</dependency>
 
         <!-- hot reload - press Ctrl+F9 in IntelliJ after a code change while application is running -->
